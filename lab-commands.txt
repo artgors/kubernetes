@@ -1,0 +1,30 @@
+1. How many nodes are part of cluster
+kubectl get nodes
+
+2. Version of K8 
+kubectl version
+
+3. Version of operating system on which K8s nodes are running
+kubectl get nodes -o wide
+
+4. How many pods exist on the system
+kubectl get pods
+
+5. Create a new pod with nginx image
+kubectl run nginx --image=nginx
+
+6. Image used to create the new pods?
+kubectl describe pod nginx
+
+7. Nodes that pods are placed on
+kubectl get pods -o wide
+
+8. How many containers are a part of a pod
+kubectl describe pod name
+
+9. Which images are used by a pod
+kubectl describe pod name
+
+10. Delete a pod
+kubectl delete pod name
+
