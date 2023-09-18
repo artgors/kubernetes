@@ -40,4 +40,22 @@ kubectl describe pods
 14. Create a ReplicaSet using a file located in /root/file.yaml
 kubectl create -f /root/replicaset-definition-1.yaml
 
-15. 
+15. Delete replicaset name replicaset-1 and replicaset-2
+kubectl delete replicaset replicaset-1
+kubectl delete replicaset replicaset-2
+
+16. Change image of a replicaset and recreate pods
+kubectl edit replicaset new-replica-set
+kubectl delete pods pods-names
+
+save file in linux esc --> :wq
+
+17. Scale replicaset into 5 pods
+kubectl edit replicaset new-replica-set
+kubectl scale rs new-replica-set --replicas=5
+
+18. How many deployments are in the system
+kubectl get deployments
+
+19. Create a new deployments
+kubectl create -f deployment-definition-http.yaml
