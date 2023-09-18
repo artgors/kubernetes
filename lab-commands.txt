@@ -28,3 +28,7 @@ kubectl describe pod name
 10. Delete a pod
 kubectl delete pod name
 
+11. How many ReplicaSets exist on the system
+kubectl get replicaset
+
+12. 
