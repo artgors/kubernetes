@@ -31,4 +31,13 @@ kubectl delete pod name
 11. How many ReplicaSets exist on the system
 kubectl get replicaset
 
-12. 
+12. Image used for a container in a pod
+kubectl describe replicaset
+
+13. Analyse why PODs are not ready
+kubectl describe pods
+
+14. Create a ReplicaSet using a file located in /root/file.yaml
+kubectl create -f /root/replicaset-definition-1.yaml
+
+15. 
